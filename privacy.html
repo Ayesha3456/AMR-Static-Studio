@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1d1d1d;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: gold;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        main {
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #f0a500;
+            font-size: 1.8rem;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            justify-self: center !important;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #121212;
+            text-align: center;
+            color: #f0a500;
+            padding: 20px;
+        }
+
+        .foot {
+            text-align: center;
+        }
+
+        .contact-link {
+            color: #fed700;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to Home button */
+        .home {
+            position: relative;
+            margin: 0 auto 20px;
+            padding: 10px 40px;
+            text-align: center;
+            background-color: #800000;
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .home::before,
+        .home::after {
+            content: "";
+            width: 80px;
+            height: 100%;
+            background-color: #800000;
+            position: absolute;
+            z-index: -1;
+            top: 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+            background-image: linear-gradient(45deg, transparent 50%, #5d3922 50%);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        .home::before {
+            left: -60px;
+        }
+
+        .home::after {
+            right: -60px;
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+    <main class="container">
+        <h2>Introduction</h2>
+        <p>
+            We value your privacy. This policy explains how we collect, use, and
+            protect your information. We are committed to ensuring that your privacy
+            is protected.
+        </p>
+
+        <h2>Information Collection</h2>
+        <p>
+            We collect personal information when you register on our site, subscribe
+            to our newsletter, or interact with our services. This information may
+            include your name, email address, and other relevant data to enhance
+            your user experience.
+        </p>
+
+        <h2>How We Use Your Information</h2>
+        <p>
+            Your information is used to provide and improve our services,
+            personalize your experience, communicate with you regarding updates, and
+            notify you of any important changes to our services.
+        </p>
+
+        <h2>Data Protection</h2>
+        <p>
+            We use industry-standard measures to protect your data and ensure its
+            confidentiality. We employ secure encryption techniques and other best
+            practices to safeguard your information from unauthorized access or
+            disclosure.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions regarding these terms or the use of our
+            services, please
+            <a href="index.html#contact" class="contact-link">contact us</a>.
+        </p>
+
+        <p><a href="index.html" class="home">Back to Home</a></p>
+    </main>
+
+    <footer>
+        <p class="foot">&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
