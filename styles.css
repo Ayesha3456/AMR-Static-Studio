@@ -79,48 +79,49 @@ footer {
 }
 
 .projects {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .project {
-  color: #e5e5e5;
-  border: 2px solid #e5e5e5;
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-  padding: 25px;
-  text-align: center;
-  flex-basis: 32%;
-  transition: 0.3s;
+  background-color: darkred;
+  border: 3px solid gold;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-  border-color: #fed700;
-  background-color: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .project i {
-  background-color: #fed700;
-  width: 60px;
-  height: 60px;
-  color: #333;
-  font-size: 26px;
-  line-height: 60px;
-  border-radius: 50%;
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 10px;
 }
 
 .project h4 {
-  font-size: 26px;
-  text-transform: capitalize;
-  margin: 20px 0;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   color: #fed700;
 }
 
 .project p {
-  color: #e5e5e5;
-  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 .ax-mt {
@@ -183,7 +184,7 @@ footer a:hover {
 }
 
 .scroll-text {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: gold;
   text-transform: uppercase;
@@ -276,5 +277,85 @@ footer a:hover {
 }
 
 iframe {
-    background: white;
+  background: white;
 }
+
+@media (max-width: 1200px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium-sized screens */
+    }
+  
+    .profile-photo img {
+      max-width: 120px; /* Adjust profile image size */
+    }
+  
+    .profile-text p {
+      font-size: 1rem; /* Slightly smaller text */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr; /* Single-column for tablets and smaller screens */
+    }
+  
+    .contact-form form {
+      width: 80%; /* Reduce form width */
+    }
+  
+    .profile-photo img {
+      max-width: 100px;
+    }
+  
+    .profile-text p {
+      font-size: 0.9rem; /* Adjust text size for readability */
+    }
+  
+    .about-content ul li,
+    .about-skills ul li {
+      font-size: 0.9rem;
+    }
+  
+    iframe {
+      width: 100%; /* Ensure iframes are responsive */
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.2rem; /* Scale down headings for smaller screens */
+    }
+  
+    .FirstElement {
+      margin: 15px 0; /* Reduce vertical spacing */
+    }
+  
+    .profile-photo img {
+      max-width: 80px; /* Smaller profile photo for phones */
+    }
+  
+    .btn-group .btn {
+      padding: 8px 15px; /* Adjust button padding */
+      font-size: 0.9rem;
+    }
+  
+    .contact-form form {
+      width: 90%; /* Narrower form for phones */
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .social a {
+      font-size: 1.2rem; /* Reduce icon size */
+    }
+  
+    footer {
+      font-size: 0.8rem;
+      padding: 10px 0; /* Adjust footer padding */
+    }
+  }
